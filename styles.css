@@ -10,13 +10,25 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.header{
+section{
     width: 100%; 
     height: 100vh;
     padding: 0 8.5%;
     background: #020412;
     color: #fff;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .clip-path{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(233, 233, 42);
+    clip-path: circle(70% at right -20%);
 }
 
 nav{
@@ -47,12 +59,13 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 300;
-    color: #fff;
+    font-weight: 400;
+    color:#02030a;
+
     
 }
 nav ul li a:hover{
-    color: yellow;
+    color: #fff;
 }
 .container{
     width: 100%;
